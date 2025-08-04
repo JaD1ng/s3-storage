@@ -1,0 +1,30 @@
+{
+  "server": {
+    "port": "8080",
+    "host": "localhost"
+  },
+  "storage": {
+    "data_dir": "./data",
+    "nodes": [
+      {
+        "id": "stg1",
+        "path": "./data/stg1"
+      },
+      {
+        "id": "stg2",
+        "path": "./data/stg2"
+      },
+      {
+        "id": "stg3",
+        "path": "./data/stg3"
+      }
+    ]
+  },
+  "database": {
+    "driver": "sqlite3",
+    "dsn": "./data/metadata.db"
+  },
+  "queue": {
+    "size": 1000
+  }
+}
